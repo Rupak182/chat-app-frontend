@@ -13,7 +13,7 @@ const ProfilePage = () => {
     if(!authUser){
       router.replace("/login")
     }
-   },[])
+   },[authUser])
     const handleImageUpload = async(e:React.ChangeEvent<HTMLInputElement>)=>{
         const file = e.target.files?.[0];
 

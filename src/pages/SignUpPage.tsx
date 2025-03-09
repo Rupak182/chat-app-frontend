@@ -17,7 +17,7 @@ const SignUpPage = () => {
     if(authUser){
       router.replace("/")
     }
-   },[])
+   },[authUser])
   
     const [showPassword,setShowPassword]=useState(false);
     const [formData,setFormData]=useState<SignupDataType>({

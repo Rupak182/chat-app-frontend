@@ -27,7 +27,7 @@ const HomePage = () => {
     if(!authUser){
       router.replace("/login")
     }
-   },[])
+   },[authUser])
 
    console.log("home:",authUser)
   return (
